@@ -18,7 +18,7 @@ ingredients = JSON.parse(ingredients_serialized)
 
 
 ingredients['drinks'].each do |ingredient|
-  new_ingredient = Ingredient.new(name: ingredient.values)
+  new_ingredient = Ingredient.new(name: ingredient.values.first)
   new_ingredient.save
 end
 
