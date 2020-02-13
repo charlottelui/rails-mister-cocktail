@@ -1,10 +1,11 @@
-<div class="container mt-3">
-  <div class="d-flex justify-content-between">
-  <h1>Cool Cocktails</h1>
-  <%= link_to new_cocktail_path do  %>
-    <h2><i class="fas fa-plus"></i><i class="fas fa-cocktail"></i></h2>
-  <% end %>
+<div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(https://images.unsplash.com/photo-1496318447583-f524534e9ce1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1105&q=80);">
+  <div class="container">
+    <h1>Best Cocktails in TOWN</h1>
+    <p><span id="banner-typed-text"></span></p>
   </div>
+</div>
+<div class="container mt-3">
+
   <div class="cards">
     <% @cocktails.each do |cocktail| %>
       <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://source.unsplash.com/300x300/?cocktail)">
