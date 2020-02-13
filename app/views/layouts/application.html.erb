@@ -16,13 +16,6 @@
   <body>
     <%= render "shared/navbar" %>
     <%= yield %>
-    <div class="container">
-      <div class="row justify-content-center">
-        <div class="col-6">
-          <%= "Lorem ipsum dolor sit amet, consectetur adipisicing elit " * 100 %>
-        </div>
-      </div>
-    </div>
     <%= javascript_include_tag "application" %> <!-- from app/assets/javascripts/application.js -->
     <%= javascript_pack_tag "application" %>    <!-- from app/javascript/packs/application.js -->
   </body>
